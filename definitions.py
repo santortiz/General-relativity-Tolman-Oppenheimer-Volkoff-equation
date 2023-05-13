@@ -43,6 +43,16 @@ def dM(xi, t):
 
     return 4*np.pi*xi**2*t**n
 
+def dM_modified(xi, t, mu):
+    """Differential equation for dimensionless mass
+    :xi: Dimensionless distance
+    :t: Dimensionless pressure
+    :returns: dM/dxi = 4*Pi*xi^2*(T(xi)^n)*(1-2*M/xi)**(-1/2)
+
+    """
+
+    return 4*np.pi*xi**2*t**n*(1-2*mu/xi)**(-1/2)
+
 def dT(xi, t, mu):
     """Differential equation for dimensionless pressure
     :xi: Dimensionless distance
