@@ -1,0 +1,1 @@
+Proposal to solve numerically the Tolman–Oppenheimer–Volkoff equation. This was for the general relativity course at the University of Antioquia. Semester 2023-1.
